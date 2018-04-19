@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>枫柚master</title>
+  
+  <subtitle>诗酒趁年华</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://hecore.github.io/"/>
+  <updated>2018-04-19T02:45:41.558Z</updated>
+  <id>https://hecore.github.io/</id>
+  
+  <author>
+    <name>hecore</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>梳理人生,简约生活</title>
+    <link href="https://hecore.github.io/2018/04/17/hello-world/"/>
+    <id>https://hecore.github.io/2018/04/17/hello-world/</id>
+    <published>2018-04-17T09:17:09.624Z</published>
+    <updated>2018-04-19T02:45:41.558Z</updated>
+    
+    <content type="html"><![CDATA[<p>重新定义生活 人生必将在不同的阅历和经历之后成长为想要的样子.</p><h2 id="学习观"><a href="#学习观" class="headerlink" title="学习观"></a>学习观</h2><h3 id="言行"><a href="#言行" class="headerlink" title="言行"></a>言行</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">言必行,行必果。</span><br></pre></td></tr></table></figure><h3 id="思悟"><a href="#思悟" class="headerlink" title="思悟"></a>思悟</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">有想法、有实践、有结果。</span><br></pre></td></tr></table></figure><h3 id="人生观"><a href="#人生观" class="headerlink" title="人生观"></a>人生观</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">若是一个上心的人,从一开始就是;若不是,一开始就不是。</span><br></pre></td></tr></table></figure><h3 id="时间观"><a href="#时间观" class="headerlink" title="时间观"></a>时间观</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">奔跑的行者。</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;重新定义生活 人生必将在不同的阅历和经历之后成长为想要的样子.&lt;/p&gt;
+&lt;h2 id=&quot;学习观&quot;&gt;&lt;a href=&quot;#学习观&quot; class=&quot;headerlink&quot; title=&quot;学习观&quot;&gt;&lt;/a&gt;学习观&lt;/h2&gt;&lt;h3 id=&quot;言行&quot;&gt;&lt;a href=&quot;#言行&quot; clas
+      
+    
+    </summary>
+    
+      <category term="生活" scheme="https://hecore.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="感悟" scheme="https://hecore.github.io/categories/%E7%94%9F%E6%B4%BB/%E6%84%9F%E6%82%9F/"/>
+    
+    
+      <category term="life" scheme="https://hecore.github.io/tags/life/"/>
+    
+  </entry>
+  
+</feed>
