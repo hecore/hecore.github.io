@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>get qr link</title>
+		<title>Apk下载引导页</title>
 		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 	</head>
 
@@ -38,9 +38,9 @@
  
 		var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight; //网页可视区高度
  
-		var weixinTip = $('<div id="weixinTip"><p><img src="live_weixin.png" onclick="downApk()" alt="微信打开"/></p></div>');
+		var weixinTip = $('<div id="weixinTip"><p><img src="live_weixin.png" onclick="downApk()" alt="微信打开"/><div id="showText">请点击右上角在浏览器中打开</div></p></div>');
 
-		var webTip = $('<div id="webTip"><p><img src="down.png" onclick="downApk()" alt="下载Apk文件"/></p></div>');
+		var webTip = $('<div id="webTip"><p><img src="down.png" onclick="downApk()" alt="下载Apk文件"/><div></p></div>');
 	
 		if(isNeizhi){
 		 
@@ -88,6 +88,13 @@
 				"height": "auto"
 		 
 		});
+		
+		$("#showText").css({
+				"color":"red",
+				"text-align": "center",
+				"max-width": "100%",				 
+				"height": "auto"
+		})
 		
 		$("img").css({
 			 "cursor":"pointer"
