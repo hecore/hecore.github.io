@@ -100,8 +100,36 @@
 			 "cursor":"pointer"
 		});
 		
+		    function IsPC()  
+           {  
+               var userAgentInfo = navigator.userAgent;  
+               var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+               var flag = true;  
+               for (var v = 0; v < Agents.length; v++) {  
+                   if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+               }  
+               return flag;  
+           }  
+		
 		function downApk(){
-			window.open("https://hecore.github.io/EpochApkdown/FSSC.apk");
+			if(IsPC()){
+				 window.location.href = "https://hecore.github.io/EpochApkdown/FSSC.apk";
+			}
+			//判断是否移动端
+			if(browser.versions.mobile||browser.versions.android||browser.versions.ios){
+			    //判断是不是微信
+			     if(browser.versions.weixin){
+					
+			    } else if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+			        //alert(navigator.userAgent);  
+			        window.location.href = "https://hecore.github.io/EpochApkdown/wxTest.ipa";
+			       //苹果端
+			    } else if (/(Android)/i.test(navigator.userAgent)) {
+			       window.location.href = "https://hecore.github.io/EpochApkdown/FSSC.apk";
+			    }
+			 };
+			
+//			window.open("https://hecore.github.io/EpochApkdown/FSSC.apk");
 			//window.open("https://github.com/beipiaopony/fssc/raw/master/FSSC.apk");
 		}
 		 
