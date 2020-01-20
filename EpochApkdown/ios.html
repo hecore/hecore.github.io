@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Apk下载引导页</title>
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<script src="vconsole.min.js"></script>
+	</head>
+
+	
+	
+	<body>
+		
+		
+	</body>
+	
+	<script type="text/javascript">
+		
+		function navJudge() {
+			var ua = navigator.userAgent.toLowerCase();
+			 
+			if (ua.match(/MicroMessenger/i) == "micromessenger") {
+			 
+				return "weixin";
+			 
+			} else if (ua.match(/QQ/i) == "qq") {
+			 
+				return "QQ";
+			 
+			} else if (ua.match(/Alipay/i) == "alipay" && payway == 2) {
+			 
+				return "alipay";
+			}
+			return false;
+		 
+		}
+		
+		var isNeizhi = navJudge(); //调用上面js判断
+ 
+		var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight; //网页可视区高度
+ 
+		var weixinTip = $('<div id="weixinTip"><p><img src="live_weixin.png" onclick="downApk()" alt="微信打开"/><div id="showText">请点击右上角在浏览器中打开</div></p></div>');
+
+		var webTip = $('<div id="webTip"><p><img src="down.png" onclick="downApk()" alt="下载Apk文件"/><div></p></div>');
+	
+		if(isNeizhi){
+		 
+			$("body").append(weixinTip);
+		 
+		}else{
+			$("body").append(webTip);
+		}
+		
+		//winHeight
+		$("#webTip").css({
+				"position": "fixed",
+				 
+				"left": "0",
+				 
+				"top": "0",
+				 
+				"height": "100%",
+				 
+				"width": "100%",
+				 
+				"z-index": "1000",
+				 
+				"background-color": "rgba(0,0,0,0.8)",
+				 
+				"filter": "alpha(opacity=80)",
+		})
+		
+		$("#webTip p").css({
+			 
+				"text-align": "center",
+				 
+				"margin-top": "15%",
+				 
+				"padding-left": "5%",
+				 
+				"padding-right": "5%"
+			 
+		});
+		
+		$("#webTip p img").css({
+			 
+				"max-width": "100%",
+				 
+				"height": "auto"
+		 
+		});
+		
+		$("#showText").css({
+				"color":"red",
+				"text-align": "center",
+				"max-width": "100%",				 
+				"height": "auto"
+		})
+		
+		$("img").css({
+			 "cursor":"pointer"
+		});
+		
+		    function IsPC()  
+           {  
+               var userAgentInfo = navigator.userAgent;  
+               var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+               var flag = true;  
+               for (var v = 0; v < Agents.length; v++) {  
+                   if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+               }  
+               return flag;  
+           }  
+		
+		function downApk(){
+			if(IsPC()){
+				 window.location.href = "https://hecore.github.io/EpochApkdown/FSSC.apk";
+			}
+			//判断是否移动端
+			if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) { //ios判断
+				window.location.href = "https://hecore.github.io/EpochApkdown/wxTest.ipa";
+			} else if (/(Android)/i.test(navigator.userAgent)) { //Android判断
+       			window.location.href = "https://hecore.github.io/EpochApkdown/FSSC.apk";
+      		}
+//			window.open("https://hecore.github.io/EpochApkdown/FSSC.apk");
+			//window.open("https://github.com/beipiaopony/fssc/raw/master/FSSC.apk");
+		}
+		 
+		$("#weixinTip").css({
+				"position": "fixed",
+				 
+				"left": "0",
+				 
+				"top": "0",
+				 
+				"height": winHeight,
+				 
+				"width": "100%",
+				 
+				"z-index": "1000",
+				 
+				"background-color": "rgba(0,0,0,0.8)",
+				 
+				"filter": "alpha(opacity=80)",
+			 
+			});
+			 
+			$("#weixinTip p").css({
+			 
+				"text-align": "center",
+				 
+				"margin-top": "10%",
+				 
+				"padding-left": "5%",
+				 
+				"padding-right": "5%"
+			 
+			});
+			 
+			$("#weixinTip p img").css({
+			 
+				"max-width": "100%",
+				 
+				"height": "auto"
+		 
+			});
+	</script>
+
+	
+</html>
